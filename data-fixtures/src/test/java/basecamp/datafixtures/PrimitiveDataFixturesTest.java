@@ -15,11 +15,10 @@ public class PrimitiveDataFixturesTest {
 
     @Test
     public void someStringReturnsAStringWithLengthBetween8And12() throws Exception {
-        assertThat(someString().length(),is(greaterThanOrEqualTo(8)));
-        assertThat(someString().length(),is(lessThanOrEqualTo(12)));
+		assertThatLengthIsBetween8And12(someString());
     }
 
-    @Test
+	@Test
     public void someStringShouldReturnJustUpperCaseLetters() throws Exception {
 		String someString = someString();
 		assertThat(StringUtils.isAlpha(someString),is(true));
@@ -31,14 +30,20 @@ public class PrimitiveDataFixturesTest {
         String first = someString();
         for (int i = 0; i < 5; i++) {
             String second = someString();
+			assertThatLengthIsBetween8And12(second);
             assertThat(second,is(not(first)));
             first = second;
         }
     }
-	
+
 	@Test
 	public void someStringOfLengthShouldAlwaysReturnTheRequestedSizeString() throws Exception{
 		int length = 15;
 		assertThat(someStringOfLength(length).length(),is(length));
+	}
+
+	private void assertThatLengthIsBetween8And12(String someString) {
+		assertThat(someString.length(),is(greaterThanOrEqualTo(8)));
+		assertThat(someString.length(),is(lessThanOrEqualTo(12)));
 	}
 }

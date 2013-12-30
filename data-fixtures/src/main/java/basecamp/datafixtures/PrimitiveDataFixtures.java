@@ -7,7 +7,7 @@ public class PrimitiveDataFixtures {
 	private static Random random = new Random();
 
 	public static String someString(){
-      return someStringOfLength(8);
+      return someStringOfLength(random.nextInt(4)+8);
 	}
 
 	public static String someStringOfLength(int length){
