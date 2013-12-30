@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="3" time="0.048" errors="0" skipped="0" tests="3" name="basecamp.datafixtures.PrimitiveDataFixturesTest">
+<testsuite failures="0" time="0.045" errors="0" skipped="1" tests="4" name="basecamp.datafixtures.PrimitiveDataFixturesTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_04\jre\bin"/>
@@ -20,7 +20,7 @@
     <property name="basedir" value="C:\dev\projs\base-camp\data-fixtures"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_04\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="surefire.real.class.path" value="C:\dev\projs\base-camp\data-fixtures\target\surefire\surefirebooter3838769148469391110.jar"/>
+    <property name="surefire.real.class.path" value="C:\dev\projs\base-camp\data-fixtures\target\surefire\surefirebooter5335871997952207403.jar"/>
     <property name="java.io.tmpdir" value="C:\Users\antonion\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
@@ -29,7 +29,7 @@
     <property name="os.name" value="Windows 7"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_04\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\APP\USER\PRODUCT\11.1.0\CLIENT_2\BIN;C:\11G ORACLE\PRODUCT\11.1.0\CLIENT_2\BIN;C:\Windows\SYSTEM32;C:\Windows;C:\Windows\SYSTEM32\WBEM;C:\Windows\SYSTEM32\WINDOWSPOWERSHELL\V1.0\;C:\INSTANTCLIENT_11_2;C:\PROGRAM FILES\TORTOISESVN\BIN;C:\Devsoftware\apache-ant-1.8.2\BIN;c:\Devsoftware\apache-maven-3.0.3\bin;c:\dev\utils;C:\Program Files\nodejs\;C:\Program Files (x86)\Git\cmd;C:\Users\antonion\AppData\Roaming\npm;."/>
-    <property name="surefire.test.class.path" value="C:\dev\projs\base-camp\data-fixtures\target\test-classes;C:\dev\projs\base-camp\data-fixtures\target\classes;C:\Users\antonion\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\antonion\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\antonion\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar;"/>
+    <property name="surefire.test.class.path" value="C:\dev\projs\base-camp\data-fixtures\target\test-classes;C:\dev\projs\base-camp\data-fixtures\target\classes;C:\Users\antonion\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\antonion\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\antonion\.m2\repository\org\hamcrest\hamcrest-all\1.3\hamcrest-all-1.3.jar;C:\Users\antonion\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="51.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -40,11 +40,11 @@
     <property name="java.specification.version" value="1.7"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="user.name" value="antonion"/>
-    <property name="java.class.path" value="C:\dev\projs\base-camp\data-fixtures\target\test-classes;C:\dev\projs\base-camp\data-fixtures\target\classes;C:\Users\antonion\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\antonion\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\antonion\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar;"/>
+    <property name="java.class.path" value="C:\dev\projs\base-camp\data-fixtures\target\test-classes;C:\dev\projs\base-camp\data-fixtures\target\classes;C:\Users\antonion\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\antonion\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\antonion\.m2\repository\org\hamcrest\hamcrest-all\1.3\hamcrest-all-1.3.jar;C:\Users\antonion\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar;"/>
     <property name="java.vm.specification.version" value="1.7"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_04\jre"/>
-    <property name="sun.java.command" value="C:\dev\projs\base-camp\data-fixtures\target\surefire\surefirebooter3838769148469391110.jar C:\dev\projs\base-camp\data-fixtures\target\surefire\surefire4576502793239796682tmp C:\dev\projs\base-camp\data-fixtures\target\surefire\surefire2717376074245787922tmp"/>
+    <property name="sun.java.command" value="C:\dev\projs\base-camp\data-fixtures\target\surefire\surefirebooter5335871997952207403.jar C:\dev\projs\base-camp\data-fixtures\target\surefire\surefire5332318186514388094tmp C:\dev\projs\base-camp\data-fixtures\target\surefire\surefire3723724356000553381tmp"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -61,136 +61,10 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase time="0.008" classname="basecamp.datafixtures.PrimitiveDataFixturesTest" name="someStringReturnsAStringOfLength8">
-    <failure message="
-Expected: is &lt;8&gt;
-     got: &lt;9&gt;
-" type="java.lang.AssertionError">java.lang.AssertionError: 
-Expected: is &lt;8&gt;
-     got: &lt;9&gt;
-
-	at org.junit.Assert.assertThat(Assert.java:780)
-	at org.junit.Assert.assertThat(Assert.java:738)
-	at basecamp.datafixtures.PrimitiveDataFixturesTest.someStringReturnsAStringOfLength8(PrimitiveDataFixturesTest.java:15)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:601)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
-	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:35)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:115)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:97)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:601)
-	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
-	at $Proxy0.invoke(Unknown Source)
-	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
-	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
-</failure>
-    <system-out>@HL
-@HL-------------------------------------------------------
-@HL T E S T S
-@HL-------------------------------------------------------
-@SLRunning basecamp.datafixtures.PrimitiveDataFixturesTest
-</system-out>
+  <testcase time="0.006" classname="basecamp.datafixtures.PrimitiveDataFixturesTest" name="someStringReturnsAStringWithLenghtBetween8And12"/>
+  <testcase time="0.008" classname="basecamp.datafixtures.PrimitiveDataFixturesTest" name="someStringOfLengthShouldAlwaysReturnTheRequestedSizeString">
+    <skipped/>
   </testcase>
-  <testcase time="0.005" classname="basecamp.datafixtures.PrimitiveDataFixturesTest" name="someStringShouldReturnJustUpperCaseLetters">
-    <failure message="
-Expected: is &lt;true&gt;
-     got: &lt;false&gt;
-" type="java.lang.AssertionError">java.lang.AssertionError: 
-Expected: is &lt;true&gt;
-     got: &lt;false&gt;
-
-	at org.junit.Assert.assertThat(Assert.java:780)
-	at org.junit.Assert.assertThat(Assert.java:738)
-	at basecamp.datafixtures.PrimitiveDataFixturesTest.someStringShouldReturnJustUpperCaseLetters(PrimitiveDataFixturesTest.java:20)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:601)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
-	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:35)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:115)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:97)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:601)
-	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
-	at $Proxy0.invoke(Unknown Source)
-	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
-	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
-</failure>
-  </testcase>
-  <testcase time="0.001" classname="basecamp.datafixtures.PrimitiveDataFixturesTest" name="someStringShouldNotRepeatAString">
-    <failure message="
-Expected: is not &quot;ABCDEFGH1&quot;
-     got: &quot;ABCDEFGH1&quot;
-" type="java.lang.AssertionError">java.lang.AssertionError: 
-Expected: is not &quot;ABCDEFGH1&quot;
-     got: &quot;ABCDEFGH1&quot;
-
-	at org.junit.Assert.assertThat(Assert.java:780)
-	at org.junit.Assert.assertThat(Assert.java:738)
-	at basecamp.datafixtures.PrimitiveDataFixturesTest.someStringShouldNotRepeatAString(PrimitiveDataFixturesTest.java:28)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:601)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
-	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:35)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:115)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:97)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:601)
-	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
-	at $Proxy0.invoke(Unknown Source)
-	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
-	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
-</failure>
-  </testcase>
+  <testcase time="0.005" classname="basecamp.datafixtures.PrimitiveDataFixturesTest" name="someStringShouldReturnJustUpperCaseLetters"/>
+  <testcase time="0.001" classname="basecamp.datafixtures.PrimitiveDataFixturesTest" name="someStringShouldNotRepeatAString"/>
 </testsuite>
