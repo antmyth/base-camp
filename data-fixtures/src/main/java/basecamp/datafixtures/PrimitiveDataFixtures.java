@@ -19,20 +19,6 @@ public class PrimitiveDataFixtures {
 	}
 
 	public static Long someNumberOfLength(int length) {
-		StringBuilder sb = new StringBuilder(8);
-		int i = 0;
-		if (length > 1) {
-			sb.append(String.valueOf((char) (random.nextInt(8) + '1')));
-			i++;
-		}
-		for (; i < length; i++) {
-			sb.append(String.valueOf((char) (random.nextInt(9) + '0')));
-		}
-//		return Long.valueOf(sb.toString());
-		return someNumberOfLength2(length);
-	}
-
-	public static Long someNumberOfLength2(int length) {
 		if (length == 0) return 0L;
 		if (length > 1) {
 			double lowestValue = Math.pow(10, length - 1);
