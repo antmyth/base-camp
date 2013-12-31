@@ -17,4 +17,8 @@ public class PrimitiveDataFixtures {
 		}
 		return sb.toString();
 	}
+
+	public static Long someNumberOfLength(int length) {
+		return null;
+	}
 }

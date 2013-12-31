@@ -1,10 +1,10 @@
 package basecamp.datafixtures;
 
 import org.apache.commons.lang3.StringUtils;
+import org.junit.Ignore;
 import org.junit.Test;
 
-import static basecamp.datafixtures.PrimitiveDataFixtures.someString;
-import static basecamp.datafixtures.PrimitiveDataFixtures.someStringOfLength;
+import static basecamp.datafixtures.PrimitiveDataFixtures.*;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.number.OrderingComparison.greaterThanOrEqualTo;
@@ -40,6 +40,14 @@ public class PrimitiveDataFixturesTest {
 	public void someStringOfLengthShouldAlwaysReturnTheRequestedSizeString() throws Exception{
 		int length = 15;
 		assertThat(someStringOfLength(length).length(),is(length));
+	}
+
+	@Ignore
+	@Test
+	public void someNumberOfLengthShouldReturnANumberWithTheCorrectSize() throws Exception{
+		int length = 8;
+		Long someNumber = someNumberOfLength(length);
+		assertThat(String.valueOf(someNumber).length(),is(length));
 	}
 
 	private void assertThatLengthIsBetween8And12(String someString) {
