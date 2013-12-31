@@ -1,8 +1,9 @@
 package basecamp.datafixtures;
 
 import org.apache.commons.lang3.StringUtils;
-import org.junit.Ignore;
 import org.junit.Test;
+
+import java.util.Random;
 
 import static basecamp.datafixtures.PrimitiveDataFixtures.*;
 import static org.hamcrest.CoreMatchers.is;
@@ -42,12 +43,30 @@ public class PrimitiveDataFixturesTest {
 		assertThat(someStringOfLength(length).length(),is(length));
 	}
 
-	@Ignore
 	@Test
 	public void someNumberOfLengthShouldReturnANumberWithTheCorrectSize() throws Exception{
-		int length = 8;
+		int length = new Random().nextInt(10)+1;
 		Long someNumber = someNumberOfLength(length);
 		assertThat(String.valueOf(someNumber).length(),is(length));
+	}
+
+	@Test
+	public void someNumberOfLengthZeroIsZero() throws Exception{
+		assertThat(someNumberOfLength(0),is(0L));
+	}
+
+	@Test
+	public void someNumberAlwaysReturnsANumberBetween10000And99999() throws Exception{
+		Long someNumber = someNumber();
+		assertThat(someNumber,is(greaterThanOrEqualTo(10000L)));
+		assertThat(someNumber,is(lessThanOrEqualTo(99999L)));
+		for (int i = 0; i < 1000; i++) {
+			Long someNumber2 = someNumber();
+			assertThat(someNumber2,is(greaterThanOrEqualTo(10000L)));
+			assertThat(someNumber2,is(lessThanOrEqualTo(99999L)));
+			assertThat(someNumber,is(not(someNumber2)));
+			someNumber = someNumber2;
+		}
 	}
 
 	private void assertThatLengthIsBetween8And12(String someString) {
