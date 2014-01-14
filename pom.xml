@@ -7,7 +7,7 @@
     <groupId>apn.java</groupId>
     <artifactId>base-camp</artifactId>
     <packaging>pom</packaging>
-    <version>DEV-SNAPSHOT</version>
+    <version>0.1</version>
 
     <dependencyManagement>
         <dependencies>
