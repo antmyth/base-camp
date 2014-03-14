@@ -1,5 +1,6 @@
 package basecamp.datafixtures;
 
+import java.util.Collection;
 import java.util.Random;
 
 public class PrimitiveDataFixtures {
@@ -26,11 +27,32 @@ public class PrimitiveDataFixtures {
 			return (long) (lowestValue + random.nextInt((int) adder));
 		}
 		else {
-			return Long.valueOf(random.nextInt(9));
+			return (long) random.nextInt(9);
 		}
 	}
 
 	public static Long someNumber() {
 		return someNumberOfLength(5);
+	}
+
+	public static Integer someInteger(){
+		return someNumberOfLength(5).intValue();
+	}
+
+	public static Integer someIntegerOfLength(int length){
+		return someNumberOfLength(length).intValue();
+	}
+
+	public static <T> T pickOneOf(T... options){
+		return options[random.nextInt(options.length)];
+	}
+
+	@SuppressWarnings("unchecked")
+	public static <T> T pickOneOf(Collection<T> choices) {
+		return (T) pickOneOf(choices.toArray());
+	}
+
+	public static <E extends Enum> E pickOneOf(Class<E> choices) {
+		return pickOneOf(choices.getEnumConstants());
 	}
 }
